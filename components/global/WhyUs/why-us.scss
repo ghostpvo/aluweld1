@@ -1,0 +1,124 @@
+@use "@/assets/style/variables" as *;
+
+.why-us {
+  padding-top: 100px;
+
+  .content {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (max-width: 1200px) {
+      display: block;
+    }
+  }
+
+  .pic {
+    display: block;
+    max-width: 635px;
+    object-fit: cover;
+    border-radius: 0 30px 30px 0;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+      max-width: none;
+      height: auto;
+      max-height: 32.5vw;
+      border-radius: 0;
+    }
+
+    @media (max-width: 900px) {
+      max-height: none;
+    }
+  }
+
+  .list {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (max-width: 1200px) {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 30px;
+    }
+
+    @media (max-width: 500px) {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+    }
+  }
+
+  .item {
+    padding: 20px 40px;
+    margin-left: 87px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+    &:nth-child(2n+2) {
+      margin-left: 0;
+      background-color: $textColor;
+      color: $white;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+
+      @media (max-width: 500px) {
+        padding-bottom: 10px;
+      }
+    }
+
+    &__icon-wrapper {
+      display: flex;
+      align-items: center;
+      width: 68px;
+      height: 68px;
+      margin-right: 20px;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $accent;
+
+      @media (max-width: 500px) {
+        width: 48px;
+        height: 48px;
+        margin-right: 10px;
+      }
+    }
+
+    .nuxt-icon {
+      font-size: 43px;
+      color: $white;
+
+      @media (max-width: 500px) {
+        font-size: 28px;
+      }
+    }
+
+    .description {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 155%;
+
+      @media (max-width: 500px) {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      padding: 15px 20px;
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding-top: 60px;
+  }
+}

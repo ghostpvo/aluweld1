@@ -1,0 +1,117 @@
+@use "@/assets/style/variables" as *;
+
+.main-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 47px;
+  justify-content: space-between;
+
+  .logo {
+    @media (max-width: 500px) {
+      max-width: 168px;
+    }
+  }
+
+  ::v-deep(.main-menu) {
+    display: flex;
+    align-items: center;
+
+    .main-menu__item {
+      margin-right: 50px;
+      transition: color .250s ease;
+
+      &:hover {
+        color: $accent;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media (max-width: 1200px) {
+        margin-right: 0;
+        padding: 10px 0;
+        text-align: center;
+      }
+    }
+
+    &.active {
+      @media (max-width: 1200px) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        display: block;
+        background-color: $backgroundColor;
+        box-shadow: 0 10px 10px 0 rgba($textColor, .5);
+      }
+    }
+
+    @media (max-width: 1200px) {
+      display: none;
+      padding-bottom: 10px;
+    }
+  }
+
+  .right-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-contact {
+    display: flex;
+    align-items: center;
+
+    .nuxt-icon {
+      color: $accent;
+    }
+
+    .text {
+      padding-left: 20px;
+    }
+
+    .label {
+      display: block;
+      padding-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .phone {
+      font-size: $basicFontSize;
+    }
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  .menu-burger {
+    display: none;
+
+    @media (max-width: 1200px) {
+      display: block;
+      margin-left: 40px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $backgroundColor;
+    z-index: 11;
+  }
+
+  @media (max-width: 900px) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: 500px) {
+    margin-bottom: 10px;
+  }
+}

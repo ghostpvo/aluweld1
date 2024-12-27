@@ -1,0 +1,42 @@
+@use "@/assets/style/variables" as *;
+
+.block-title {
+  padding-bottom: 27px;
+  font-size: $titlesFontSize;
+  font-weight: $fontWeightMedium;
+  line-height: 135%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  mark {
+    position: relative;
+    left: -10px;
+    color: $accent;
+
+    @media (max-width: 900px) {
+      left: -7px;
+    }
+  }
+
+  &.subtitle {
+    padding-bottom: 0;
+    font-size: 25px;
+
+    mark {
+      left: -4px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    font-size: $titlesFontSizeTablet;
+  }
+
+  @media (max-width: 500px) {
+    padding-bottom: 20px;
+    font-size: $titlesFontSizeMobile;
+  }
+}

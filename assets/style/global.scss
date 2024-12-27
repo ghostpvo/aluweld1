@@ -1,0 +1,57 @@
+@use "reset";
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $fontWeightRegular;
+  font-size: $basicFontSize;
+  font-style: normal;
+  color: $textColor;
+  line-height: 155%;
+  background-color: $backgroundColor;
+
+  .nuxt-icon {
+    display: flex;
+    font-size: 32px;
+    line-height: 1;
+
+    svg {
+      margin-bottom: 0;
+    }
+
+    &.fill-none {
+      &.nuxt-icon--fill,
+      &.nuxt-icon--fill * {
+        fill: none !important;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    font-size: $basicFontSizeMobile;
+  }
+}
+
+.wrapper {
+  max-width: 1512px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
+
+  @media (max-width: 1300px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (max-width: 650px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+

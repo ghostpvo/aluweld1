@@ -1,0 +1,86 @@
+@use "@/assets/style/variables" as *;
+
+.our-prices {
+  padding-top: 100px;
+
+  .text {
+    font-weight: $fontWeightLight;
+  }
+
+  .factors-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+    padding-top: 29px;
+
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+      padding-top: 20px;
+    }
+  }
+
+  .factor-item {
+    padding: 20px 40px;
+    border-radius: 15px 60px 15px 15px;
+    border: 1px solid rgba($black, .1);
+    font-size: 16px;
+
+    .block-title {
+      padding-bottom: 15px;
+
+      @media (max-width: 500px) {
+        padding-bottom: 10px;
+      }
+    }
+
+    &__description {
+      font-weight: $fontWeightLight;
+    }
+
+    @media (max-width: 500px) {
+      padding: 15px 20px;
+      font-size: 14px;
+      border-radius: 10px 45px 10px 10px;
+    }
+  }
+
+  .marked-text {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    line-height: 155%;
+
+    @media (max-width: 500px) {
+      padding-top: 20px;
+      font-size: 18px;
+    }
+  }
+
+  .accordion-item-wrapper {
+    border-top: 1px solid rgba($black, 0.2);
+  }
+
+  .accent-text {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 24px;
+    font-weight: $fontWeightMedium;
+    font-size: 30px;
+    line-height: 145%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    mark {
+      color: $accent;
+    }
+
+    @media (max-width: 500px) {
+      padding: 20px 0;
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding-top: 60px;
+  }
+}

@@ -1,0 +1,83 @@
+@use "@/assets/style/variables" as *;
+
+.accordion-item {
+  border-bottom: 1px solid rgba($black, 0.2);
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    .question {
+      font-weight: $fontWeightLight;
+
+      @media (max-width: 500px) {
+        font-size: 16px;
+      }
+    }
+
+    .icon {
+      padding-left: 20px;
+
+      .nuxt-icon {
+        transition: transform .5s;
+        font-size: 20px;
+        color: $accent;
+      }
+
+      &.open {
+
+        .nuxt-icon {
+          transform: rotate(135deg);
+        }
+      }
+    }
+
+    @media (max-width: 500px) {
+      padding: 10px;
+    }
+  }
+
+  .answer {
+    height: 0;
+    overflow-y: scroll;
+    background-color: $lightGrey2;
+    transition: height .5s;
+    font-weight: $fontWeightLight;
+    font-size: 16px;
+    line-height: 155%;
+
+    p {
+      padding: 20px 40px;
+
+      @media (max-width: 500px) {
+        padding: 10px 20px;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      appearance: none;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      width: 5px;
+      background-color: rgba($black, .3);
+      border-radius: 50px;
+    }
+
+    &.open {
+      height: 150px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 14px;
+    }
+  }
+}

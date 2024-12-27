@@ -1,0 +1,33 @@
+@use "@/assets/style/variables" as *;
+
+.main-button {
+  padding: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: $accent;
+  font-weight: $fontWeightMedium;
+  font-size: $basicFontSize;
+  line-height: 155%;
+  text-transform: uppercase;
+
+  .title {
+    padding-right: 10px;
+  }
+
+  &:hover {
+    .nuxt-icon {
+      right: -15px;
+    }
+  }
+
+  .nuxt-icon {
+    position: relative;
+    right: 0;
+    font-size: 15px;
+    transition: all .3s ease;
+    transform: rotate(-135deg);
+  }
+}

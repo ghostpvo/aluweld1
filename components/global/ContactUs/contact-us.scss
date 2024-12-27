@@ -1,0 +1,77 @@
+@use "@/assets/style/variables" as *;
+
+.contact-us {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .text-input,
+  .textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-family: "Exo 2", sans-serif;
+    font-weight: $fontWeightLight;
+    font-size: 16px;
+    background-color: $lightGrey3;
+    border-radius: 8px;
+
+    &::placeholder {
+      font-family: "Exo 2", sans-serif;
+      font-weight: $fontWeightLight;
+      font-size: 16px;
+      font-style: normal;
+      color: $textColor;
+      line-height: 155%;
+    }
+  }
+
+  .text-input {
+    height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .textarea {
+    height: 141px;
+    resize: none;
+  }
+
+  .form-side {
+    width: 51%;
+    padding-right: 20px;
+
+    @media (max-width: 900px) {
+      width: 100%;
+      padding-right: 0;
+      padding-bottom: 50px;
+    }
+
+    @media (max-width: 500px) {
+      padding: 0 20px 20px;
+    }
+  }
+
+  .pic {
+    width: 49%;
+    object-fit: cover;
+    border-radius: 30px;
+
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+
+    @media (max-width: 500px) {
+      border-radius: 0;
+      max-height: 177px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    display: block;
+  }
+
+  @media (max-width: 500px) {
+    padding: 60px 0;
+  }
+}
