@@ -19,6 +19,7 @@
     .logo {
       display: block;
       padding-bottom: 10px;
+      max-width: 202px;
 
       @media (max-width: 1000px) {
         margin: 0 auto;

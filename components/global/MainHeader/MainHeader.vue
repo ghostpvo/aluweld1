@@ -6,7 +6,7 @@ const isActive = ref(false)
 
 <template>
   <div class="main-header wrapper">
-    <img :src="'/img/logo.svg'" alt="" class="logo">
+    <img :src="'/img/logo.png'" alt="" class="logo">
     <main-menu :is-active="isActive"/>
     <div class="right-content">
       <div class="header-contact">
