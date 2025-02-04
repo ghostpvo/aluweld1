@@ -75,9 +75,11 @@
   .main-image {
     display: block;
     width: 100%;
+    max-width: 1400px;
     max-height: 32.5vw;
-    margin-top: 28px;
+    margin: 28px auto 0;
     object-fit: cover;
+    object-position: top;
 
     @media (max-width: 900px) {
       max-height: none;

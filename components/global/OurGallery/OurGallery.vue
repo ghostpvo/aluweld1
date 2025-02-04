@@ -83,7 +83,7 @@ const showImg = (index) => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen frameborder="0"
           referrerpolicy="strict-origin-when-cross-origin"
-          src="https://www.youtube.com/embed/3YxaaGgTQYM?si=pA9nB0tfVqNOJmCP"
+          src="https://www.youtube.com/embed/OQO7a_GXipo?si=Ms7om2Kzwp6X9-gm"
           title="YouTube video player"></iframe>
     </div>
   </div>
