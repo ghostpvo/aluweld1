@@ -10,6 +10,8 @@
   justify-content: space-between;
 
   .logo {
+    max-width: 202px;
+
     @media (max-width: 500px) {
       max-width: 168px;
     }
@@ -112,6 +114,8 @@
   }
 
   @media (max-width: 500px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-bottom: 10px;
   }
 }

@@ -54,6 +54,7 @@
     bottom: 8px;
     font-size: 83px;
     color: $textColor;
+    transform: rotate(135deg);
 
     @media (max-width: 1300px) {
       right: 50px;

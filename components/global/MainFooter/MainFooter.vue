@@ -7,7 +7,7 @@ import MainMenu from "~/components/elements/MainMenu/MainMenu.vue";
   <div class="main-footer">
     <div class="wrapper">
       <div class="left-side">
-        <img :src="'/img/logo.svg'" alt="" class="logo">
+        <img :src="'/img/logo.png'" alt="" class="logo">
         <span class="copyright">© 2024 АлюведУж. Всі права захищено</span>
       </div>
       <div class="right-side">
