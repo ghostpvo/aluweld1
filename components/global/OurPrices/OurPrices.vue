@@ -17,37 +17,37 @@ const items = ref([
   {
     "id": 1,
     "question": "Вартісь 1 метра зварного шву може коливатись від 2400 грн до 3300 грн",
-    "answer": "Вартісь 1 метра зварного шву може коливатись від 2400 грн до 3300 грн. Вартісь 1 метра зварного шву може коливатись від 2400 грн до 3300 грн. Вартісь 1 метра зварного шву може коливатись від 2400 грн до 3300 грн. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id sagittis justo, sed egestas dui. Donec ut suscipit tortor, a faucibus dolor. Praesent consectetur suscipit erat nec volutpat. Nullam tristique velit non magna ultricies, ac mattis sem tincidunt. Donec consectetur cursus semper. Nam nec massa arcu. Morbi tristique neque vel fringilla ullamcorper. Donec pretium maximus lorem, nec finibus sem suscipit eu. Quisque ut nulla lacus. Integer aliquam arcu ac feugiat consequat. Phasellus purus ante, iaculis vitae sodales at, pharetra et mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id sagittis justo, sed egestas dui. Donec ut suscipit tortor, a faucibus dolor. Praesent consectetur suscipit erat nec volutpat. Nullam tristique velit non magna ultricies, ac mattis sem tincidunt. Donec consectetur cursus semper. Nam nec massa arcu. Morbi tristique neque vel fringilla ullamcorper. Donec pretium maximus lorem, nec finibus sem suscipit eu. Quisque ut nulla lacus. Integer aliquam arcu ac feugiat consequat. Phasellus purus ante, iaculis vitae sodales at, pharetra et mi.",
+    "answer": "Оплата за нашу роботу по виготовленню вироба/конструкції (зварювальні роботи)",
     "isOpen": false
   },
   {
     "id": 2,
     "question": "До цього ще додаємо вартість виїзду (транспортні витрати)",
-    "answer": "Lorem ipsum dolor sit amet, ",
+    "answer": "Транспортні витрати/найманий водій.",
     "isOpen": false
   },
   {
     "id": 3,
     "question": "Вартість матеріалів (наприклад труби із яких виготовляється виріб) та вартість розхідматеріалів теж окремо (алюмінієвий зварювальний дріт, аргон, інші витратні матеріали)",
-    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id sagittis justo, sed egestas dui. Donec ut suscipit tortor, a faucibus dolor. Praesent consectetur suscipit erat nec volutpat. Nullam tristique velit non magna ultricies, ac mattis sem tincidunt. Donec consectetur cursus semper. Nam nec massa arcu. Morbi tristique neque vel fringilla ullamcorper. Donec pretium maximus lorem, nec finibus sem suscipit eu. Quisque ut nulla lacus. Integer aliquam arcu ac feugiat consequat. Phasellus purus ante, iaculis vitae sodales at, pharetra et mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id sagittis justo, sed egestas dui. Donec ut suscipit tortor, a faucibus dolor. Praesent consectetur suscipit erat nec volutpat. Nullam tristique velit non magna ultricies, ac mattis sem tincidunt. Donec consectetur cursus semper. Nam nec massa arcu. Morbi tristique neque vel fringilla ullamcorper. Donec pretium maximus lorem, nec finibus sem suscipit eu. Quisque ut nulla lacus. Integer aliquam arcu ac feugiat consequat. Phasellus purus ante, iaculis vitae sodales at, pharetra et mi.",
+    "answer": "Алюмінієвий прокат наприклад труби із яких виготовляється виріб (якщо це не ремонтні роботи). А також алюмінієвий зварювальний дріт, аргон, інші витратні матеріали.",
     "isOpen": false
   },
   {
     "id": 4,
     "question": "Вартість проектування, якщо це складний виріб",
-    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id sagittis justo, sed egestas dui. Donec ut suscipit tortor, a faucibus dolor. Praesent consectetur suscipit erat nec volutpat. Nullam tristique velit non magna ultricies, ac mattis sem tincidunt. Donec consectetur cursus semper. Nam nec massa arcu. Morbi tristique neque vel fringilla ullamcorper. Donec pretium maximus lorem, nec finibus sem suscipit eu. Quisque ut nulla lacus. Integer aliquam arcu ac feugiat consequat. Phasellus purus ante, iaculis vitae sodales at, pharetra et mi.",
+    "answer": "Якщо мова йде про виготовлення якогось виробу чи конструкції із алюмінію, скоріш за все його потрібно буде попередньо спроектувати у спеціальній програмі із можливістю 3Д візуалізації, щоб клієнт розумів що він отримає за свої кошти. Вартість проектування - орієнтовно 375 грн/год.",
     "isOpen": false
   },
   {
     "id": 5,
     "question": "Вартість монтажу, якщо виріб монтується у Вас по місцю його експлуатації (наприклад навіс, ворота, тощо)",
-    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id sagittis justo, sed egestas dui. Donec ut suscipit tortor, a faucibus dolor. Praesent consectetur suscipit erat nec volutpat. Nullam tristique velit non magna ultricies, ac mattis sem tincidunt. Donec consectetur cursus semper. Nam nec massa arcu. Morbi tristique neque vel fringilla ullamcorper. Donec pretium maximus lorem, nec finibus sem suscipit eu. Quisque ut nulla lacus. Integer aliquam arcu ac feugiat consequat. Phasellus purus ante, iaculis vitae sodales at, pharetra et mi.",
+    "answer": "Якщо виріб монтується у Вас по місцю його експлуатації",
     "isOpen": false
   },
   {
     "id": 6,
     "question": "Вартість орендної плати та витраченої електроенергії, якщо виріб/конструкція виготовляється у нас в цеху",
-    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id sagittis justo, sed egestas dui. Donec ut suscipit tortor, a faucibus dolor. Praesent consectetur suscipit erat nec volutpat. Nullam tristique velit non magna ultricies, ac mattis sem tincidunt. Donec consectetur cursus semper. Nam nec massa arcu. Morbi tristique neque vel fringilla ullamcorper. Donec pretium maximus lorem, nec finibus sem suscipit eu. Quisque ut nulla lacus. Integer aliquam arcu ac feugiat consequat. Phasellus purus ante, iaculis vitae sodales at, pharetra et mi.",
+    "answer": "Якщо перед монтажем виріб/конструкція виготовляється у нас в цеху (сюди ж входять амортизаційні та інші витрати (канцелярські тощо)",
     "isOpen": false
   },
 ])
